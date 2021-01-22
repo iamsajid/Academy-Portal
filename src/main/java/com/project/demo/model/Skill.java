@@ -7,15 +7,13 @@ import javax.persistence.Id;
 public class Skill {
 	
 	@Id
-	private int skillId;
-	
+	private String skillId;
 	private String skillFamily;
-	private String proficiencyLevel;
 	private String skillName;
-	public int getSkillId() {
+	public String getSkillId() {
 		return skillId;
 	}
-	public void setSkillId(int skillId) {
+	public void setSkillId(String skillId) {
 		this.skillId = skillId;
 	}
 	public String getSkillFamily() {
@@ -24,17 +22,17 @@ public class Skill {
 	public void setSkillFamily(String skillFamily) {
 		this.skillFamily = skillFamily;
 	}
-	public String getProficiencyLevel() {
-		return proficiencyLevel;
-	}
-	public void setProficiencyLevel(String proficiencyLevel) {
-		this.proficiencyLevel = proficiencyLevel;
-	}
 	public String getSkillName() {
 		return skillName;
 	}
 	public void setSkillName(String skillName) {
 		this.skillName = skillName;
 	}
+	@Override
+	public String toString() {
+		return "Skill [skillId=" + skillId + ", skillFamily=" + skillFamily + ", skillName=" + skillName + "]";
+	}
+	
+	
 	
 }

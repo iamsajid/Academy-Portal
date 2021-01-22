@@ -18,18 +18,22 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body onload="alert('Succesfully Logged In');" style="background-color: lightgrey;">
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+<body 
+	style="background-color: lavender;">
+	<nav
+		class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
 		<ul class="navbar-nav ">
-			<li class="nav-item active"><a class="nav-link" href="/home">ACADEMY
+			<li class="nav-item "><a class="nav-link" href="/home">ACADEMY
 					PORTAL</a></li>
 
-			<li class="nav-item "><a class="nav-link" href="#"></a></li>
+			<li class="nav-item active "><a class="nav-link"
+				href="/admin_registration_page">Admin</a></li>
+
+			
+
 
 		</ul>
-
 	</nav>
-
 	</br>
 
 	<div class="text-center wow fadeInDown" align="center">
@@ -39,77 +43,56 @@
 
 			</hr>
 			<div class="row" style="margin: auto">
-				<div class="col" style="background-color: lightgrey; padding: 1em;">
+				<div class="col" style="background-color: lavender; padding: 1em;">
 
 					<h2>Hello ${admin}</h2>
-
-				</div>
-
-
-			</div>
-			<div class="row" style="margin: 30px;">
-				<div class="col"
-					style="background-color: lightgrey; padding: 3em; border-radius: 25px; border: 3px solid grey;">
-					<a href="#">
-						<H3>Faculty Registration</H3>
-					</a>
-				</div>
-
-				<div class="col"
-					style="background-color: lightgrey; border-radius: 25px; border: 3px solid grey; padding: 3em;">
-					<a href="#">
-						<H3>Skill Registration</H3>
-					</a>
-				</div>
-				<div class="col"
-					style="background-color: lightgrey; border-radius: 25px; border: 3px solid grey; padding: 3em;">
-					<a href="#">
-						<H3>Module Registration</H3>
-					</a>
 				</div>
 			</div>
-			<div class="row" style="margin: 30px;">
-				<div class="col"
-					style="background-color: lightgrey; border-radius: 25px; border: 3px solid grey; padding: 3em;">
-					<a href="/batch_reg_page">
-						<H3>Batch Registration</H3>
-					</a>
-				</div>
-
-				<div class="col"
-					style="background-color: lightgrey; border-radius: 25px; border: 3px solid grey; padding: 3em;">
-					<a href="#">
-						<H3>Batch Nomination</H3>
-					</a>
-				</div>
-				<div class="col"
-					style="background-color: lightgrey; border-radius: 25px; border: 3px solid grey; padding: 3em;">
-					<a href="#">
-						<H3>Report Generation</H3>
-					</a>
-				</div>
+			<div class="col"
+				style="background-color: lavender; border-radius: 25px; border: 3px solid grey; padding: 3em;">
+				<a href="/skill_reg_page">
+					<H3>Skill Registration</H3>
+				</a>
 			</div>
-			<div class="row" style="margin: auto">
-
-				<div class="col" style="background-color: lightgrey; padding: 1em;">
-
-					<a href="/home"><button type="button"
-							class="btn btn-secondary btn-lg">Log Out</button></a>
-
-				</div>
+			<br>
+			<div class="col"
+				style="background-color: lavender; border-radius: 25px; border: 3px solid grey; padding: 3em;">
+				<a href="/module_reg">
+					<H3>Module Registration</H3>
+				</a>
 			</div>
+
 		</div>
-</body>
-<!-- Footer -->
-<footer class="page-footer font-small blue">
+		<div class="row" style="margin: 30px;">
+			<div class="col"
+				style="background-color: lavender; border-radius: 25px; border: 3px solid grey; padding: 3em;">
+				<a href="/batch_reg_page">
+					<H3>Batch Registration</H3>
+				</a>
+			</div>
 
-	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3">
-		© 2020 Copyright: <a href="#"> Cognizant</a>
+		</div>
+		<div class="col"
+			style="background-color: lavender; border-radius: 25px; border: 3px solid grey; padding: 3em;">
+			<a href="/skilmodule_listing">
+				<H3>Skill/Module Mapping</H3>
+			</a>
+		</div>
+		<div class="row" style="margin: 30px;">
+			<div class="col"
+				style="background-color: lavender; border-radius: 25px; border: 3px solid grey; padding: 3em;">
+				<a href="/resolve">
+					<H3>Resolve help Request</H3>
+				</a>
+			</div>
+
+		</div>
+
+		<a href="/home"><button type="button"
+				class="btn btn-secondary btn-lg">Log Out</button></a>
+
 	</div>
-	<!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-
+	</div>
+	</div>
+</body>
 </html>

@@ -13,9 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
-
-<body style="background-color:lightgrey;">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
     <ul class="navbar-nav ">
       <li class="nav-item ">
         <a class="nav-link" href="/home">ACADEMY PORTAL</a>
@@ -34,6 +32,9 @@
     </ul>
 
   </nav>
+
+<body style="background-color:lavender;">
+ 
 
   </br></br>
   

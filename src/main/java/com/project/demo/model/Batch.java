@@ -5,6 +5,10 @@ import javax.persistence.Id;
 
 @Entity
 public class Batch {
+	public Batch() {
+		super();
+	}
+
 	@Id
 	private String batchId;
 	private String skillId;
@@ -14,7 +18,17 @@ public class Batch {
 	private String batchStartDate;
 	private String batchEndDate;
 	private int batchCapacity;
+	private int count;
 	private String classRoom;
+	//private int action=0;
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	
 	public String getBatchId() {
 		return batchId;
 	}
@@ -70,12 +84,21 @@ public class Batch {
 		this.classRoom = classRoom;
 	}
 	
+//	public int getAction() {
+//		return action;
+//	}
+//	public void setAction(int action) {
+//		this.action = action;
+//	}
 	@Override
 	public String toString() {
 		return "Batch [batchId=" + batchId + ", skillId=" + skillId + ", moduleId=" + moduleId + ", technology="
 				+ technology + ", facultyId=" + facultyId + ", batchStartDate=" + batchStartDate + ", batchEndDate="
-				+ batchEndDate + ", batchCapacity=" + batchCapacity + ", classRoom=" + classRoom + "]";
+				+ batchEndDate + ", batchCapacity=" + batchCapacity + ", count=" + count + ", classRoom=" + classRoom
+				+ "]";
 	}
+	
+	
 	
 	
 }

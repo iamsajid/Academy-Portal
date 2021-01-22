@@ -18,33 +18,31 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+    <ul class="navbar-nav ">
+      <li class="nav-item ">
+        <a class="nav-link" href="/home">ACADEMY PORTAL</a>
+      </li>
 
-<body style="background-color: lightgrey;">
-	<nav
-		class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
-		<ul class="navbar-nav ">
-			<li class="nav-item "><a class="nav-link" href="/home">ACADEMY
-					PORTAL</a></li>
+      <li class="nav-item active ">
+        <a class="nav-link" href="/admin_registration_page">Admin</a>
+      </li>
+     
+    </ul>
 
-			<li class="nav-item nav active"><a class="nav-link"
-				href="/admin_registration_page"> Admin</a></li>
-			<li class="nav-item"><a class="nav-link"
-				href="/faculty_registration_page">Faculty</a></li>
+  </nav>
 
-			<li class="nav-item "><a class="nav-link "
-				href="/employee_registration_page">Employee</a></li>
-		</ul>
+<body style="background-color: lavender;">
+	
 
-	</nav>
-
-	</br>
+	
 	</br>
 	<div class="text-center wow fadeInDown" align="center">
 		<h2>Admin Registration</h2>
-		</br> <img src="http://image005.flaticon.com/1/svg/74/74229.svg"
+		</br> <img src="https://pngimage.net/wp-content/uploads/2018/06/logo-admin-png-4.png"
 			alt="user icon" class="logo" height="130px" width="120px">
 
-		<form action="/admin_registration" class="needs-validation" novalidate>
+		<form action="/admin_registration" class="needs-validation" novalidate method ="post">
 			<div class="form-fild" align="center">
 				<label for="fname">First Name:</label> <input type="text"
 					class="form-control" id="fname" placeholder="Enter firstName"
@@ -61,57 +59,86 @@
 				<div class="invalid-feedback"></div>
 			</div>
 			<div class="form-fild" align="center">
-				<label for="age">Age:</label> <a  data-toggle="tooltip"
+				<label for="dob">DOB<a  data-toggle="tooltip"
 					data-placement="top"
-					title="Age can not be less than 20 or greater than 99"> <input
-					type="text" class="form-control" id="age" placeholder="Enter Age"
-					name="age" pattern="[2-9]{1}[0-9]{1}" style="width: 400px;"
-					required></a>
+					title="Enter valid date of birth eg-DD-MM-YYYY"> <input
+					type="date" class="form-control" id="dob" placeholder="Enter DOB" pattern="[0-9]{2}[-]{1}[0-9]{2}-[0-9]{4}"
+					name="dob"  style="width: 400px;"
+					required></a></label>
 				<div class="valid-feedback"></div>
 				<div class="invalid-feedback"></div>
 
 			</div>
 
 			<div class="form-fild" align="center">
-				<label for="gender">Gender:</label>
+				<label for="gender">Gender:
 				 <a data-toggle="tooltip" data-placement="top"
 					title="Gender should be M or F"> <input type="text"
-					class="form-control" id="gender" placeholder="Enter Gender"
-					name="gender" style="width: 400px;" required></a>
+					class="form-control" id="gender" placeholder="Enter Gender"pattern="[MF]{1}"
+					name="gender" style="width: 400px;" required></a></label>
 				<div class="valid-feedback"></div>
 				<div class="invalid-feedback"></div>
 			</div>
 			<div class="form-fild" align="center">
-				<label for="contactNo">Contact No:</label> 
+				<label for="contactNo">Contact No:
 				<a data-toggle="tooltip" data-placement="top"
 					title="Length should be 10 Digits"> <input type="text"
 					class="form-control" pattern="^[7-9]\d{9}$" id="contact_no"
 					placeholder="Enter Conatact No" name="contactNo"
 					style="width: 400px;" required>
-				</a>
+				</a></label> 
 				<div class="valid-feedback"></div>
 				<div class="invalid-feedback"></div>
 			</div>
+			
+			
 			<div class="form-fild" align="center">
-				<label for="admin_id">Admin Id:</label> <a 
+				<label for="emailid">Email : <a 
 					data-toggle="tooltip" data-placement="top"
-					title="Admin Id should be of 3 Digits"> <input type="text"
-					class="form-control" id="admin_id" pattern="[0-9]{3}"
-					placeholder="Enter Admin Id" name="adminId" style="width: 400px;"
-					required></a>
+					title="Enter valid email id (eg-abc@gmail.com)"> <input type="text"
+					class="form-control" id="emailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+					placeholder="Enter Email Id" name="email" style="width: 400px;"
+					required></a></label>
 				<div class="valid-feedback"></div>
 				<div class="invalid-feedback"></div>
-			</div>
+			</div> 
+			
 
 			<div class="form-fild" align="center">
-				<label for="password">Password:</label> <a 
+				<label for="password">Password: <a 
 					data-toggle="tooltip" data-placement="top"
 					title="Password should consist upperCase lowerCase and symbol!">
 					<input type="password" class="form-control" id="password"
 					pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[~!@#$%^&*()_}{]).{8,}"
 					placeholder="Enter password" name="password" style="width: 400px;"
 					required>
-				</a>
+				</a></label>
+				<div class="valid-feedback"></div>
+				<div class="invalid-feedback"></div>
+			</div>
+			<div class="form-fild" align="center">
+				<label for="securityQuestion">Security Question: <a 
+					data-toggle="tooltip" data-placement="top"
+					title="Choose the appropriate security question">
+					<select
+					name="securityQuestion" id="securityQuestion">
+					<option value="What is your zodiac sign">What is your zodiac sign</option>
+					<option value="what is your favourite color">what is your favourite color</option>
+					<option value="who is your favourite teacher">who is your favourite teacher</option>
+				</select>
+				</a></label>
+				<div class="valid-feedback"></div>
+				<div class="invalid-feedback"></div>
+			</div>
+			<div class="form-fild" align="center">
+				<label for="answer">Answer: <a 
+					data-toggle="tooltip" data-placement="top"
+					title="Give the correct answer for chosen question ">
+					<input type="text" class="form-control" id="answer"
+					
+					placeholder="write your answer here" name="answer" style="width: 400px;"
+					required>
+				</a></label>
 				<div class="valid-feedback"></div>
 				<div class="invalid-feedback"></div>
 			</div>
@@ -165,16 +192,6 @@
 	</script>
 
 </body>
-<!-- Footer -->
-<footer class="page-footer font-small blue">
 
-	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3">
-		© 2020 Copyright: <a href="#"> Cognizant</a>
-	</div>
-	<!-- Copyright -->
-
-</footer>
-<!-- Footer -->
 
 </html>

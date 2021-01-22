@@ -6,5 +6,9 @@ import com.project.demo.model.Admin;
 
 public interface AdminRepo extends CrudRepository<Admin, Integer> {
 
+	Admin findByAnswer(String answer);
+	
+	Admin findByAdminId(int adminId);
+
 }
  
